@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+:root {
+    --color-text-b: #000000;
+    --color-text-w: #ffffff;
+    --color-design: #b9b9b9;
+    /*--color-gradient: linear-gradient(to bottom right,#9494a0,#37373b);#00aa41*/
+    --color-gradient: linear-gradient(to bottom right, #6f00ff,#2f016b,#2a2a33);
+    --color-button-gradient: linear-gradient(to bottom,#ffffff,#ececec);
+}
+
+.gradient {
+    background: var(--color-button-gradient);
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-gradient);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;       
+}
+
+.container {
+    padding: 0px 20px;
+    user-select: none;
+    max-width: 500px;
+    max-height: 80vh;
+    width: 100%;
+    height: 100vh;
+}
+
+/*_________________________________________________________________*/
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    width: 130px;
+    margin: -10px 20px 10px;
+    border-radius: 100%;
+}
+
+header h1 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--color-text-w);
+}
+
+header p {
+    font-size: 11px;
+    color: var(--color-text-w);
+}
+
+/*_________________________________________________________________*/
+
+section {  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button button {     
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: var(--color-text-b);
+}
+
+
+
+.button b {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.button i {
+    color: var(--color-text-b);
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+/*_________________________________________________________________*/
+
+footer {  /* BTN Quadrados */
+    text-align: center;
+    margin: 30px 0 20px;
+}
+
+.icon{      /* color 'class=".gradient" */
+    width: 40px;
+    height:40px;    
+    line-height: 40px; 
+    margin: 0 5px;
+    font-size: 30px;
+    border-radius: 25%;
+    display: inline-block;
+    color: var(--color-text-w);
+    
+}
+
+
+
+footer p {   
+    font-size: 8px;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-design);
+}
+
+.arthur{ 
+    font-size: 9px;
+    margin: 0 3px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+/* Responsividade para desktop ________________________________*/
+
+@media (min-width: 500px) {
+    .background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20%;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    header {
+        margin-top: 0px;
+    }
+    
+    button:hover {  /* Animação dos btn */
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
+
+    footer {
+        padding-bottom: 0px;
+    }
+    
+    .icon:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
+
+    footer p {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    .container {
+        padding: 0 20px;
+    }
+
+    header {
+        margin-top: 10px;
+    }
+    main {
+        margin-top: 10%;
+    }
+
+    footer p {
+        margin-top: 60px;
+    }
+
+}
