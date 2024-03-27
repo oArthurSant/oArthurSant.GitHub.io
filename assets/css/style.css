@@ -11,7 +11,7 @@
     --color-text-w: #ffffff;
     --color-design: #b9b9b9;
     /*--color-gradient: linear-gradient(to bottom right,#9494a0,#37373b);#00aa41*/
-    --color-gradient: linear-gradient(to bottom right, #6f00ff,#2f016b,#2a2a33);
+    --color-gradient: linear-gradient(to bottom right, #cad3e7,#696975,#323238);
     --color-button-gradient: linear-gradient(to bottom,#ffffff,#ececec);
 }
 
@@ -53,7 +53,7 @@ header {
 
 header img {
     width: 130px;
-    margin: -10px 20px 10px;
+    margin: 0 0 10px 0;
     border-radius: 100%;
 }
 
@@ -121,8 +121,6 @@ footer {  /* BTN Quadrados */
     color: var(--color-text-w);
     
 }
-
-
 
 footer p {   
     font-size: 8px;
