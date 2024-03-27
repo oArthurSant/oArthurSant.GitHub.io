@@ -28,20 +28,20 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     background: var(--color-gradient);
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;       
+    height: 100vh;
 }
 
 .container {
+    margin: 18% 0 0;
     padding: 0px 20px;
     user-select: none;
-    max-width: 500px;
-    max-height: 80vh;
     width: 100%;
-    height: 100vh;
+    height: 630px;
+    max-width: 500px;
+    position: relative;
 }
 
 /*_________________________________________________________________*/
@@ -89,8 +89,6 @@ section {
     color: var(--color-text-b);
 }
 
-
-
 .button b {
     font-size: 13px;
     font-weight: 600;
@@ -105,29 +103,33 @@ section {
 
 /*_________________________________________________________________*/
 
-footer {  /* BTN Quadrados */
-    text-align: center;
-    margin: 30px 0 20px;
-}
-
-.icon{      /* color 'class=".gradient" */
-    width: 40px;
-    height:40px;    
-    line-height: 40px; 
-    margin: 0 5px;
-    font-size: 30px;
-    border-radius: 25%;
-    display: inline-block;
-    color: var(--color-text-w);
-    
-}
-
-footer p {   
-    font-size: 8px;
-    margin-top: 30%;
+.icons {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0 0;
+}
+
+.icon{
+    font-size: 30px;
+    color: var(--color-text-w);
+}
+
+.mail {
+    font-size: 34px;
+}
+
+footer p {
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Movendo o parágrafo para o centro horizontalmente */
+    transform: translateX(-50%); /* Ajustando para centrar horizontalmente */
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+    font-size: 8px;
     color: var(--color-design);
 }
 
@@ -146,11 +148,12 @@ footer p {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 20%;
     }
 
     .container {
+        margin: 0;
         padding: 0;
+        height: 90vh;
     }
 
     header {
